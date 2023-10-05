@@ -1,0 +1,29 @@
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EAEAEA;
+    width: 270px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button:hover, 
+.button:hover>input {
+    background-color: #8A33FD;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    border-style: none;
+    outline:none;
+    font-size: 16px;
+    background-color: #EAEAEA;
+    cursor: pointer;
+}

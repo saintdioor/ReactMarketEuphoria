@@ -1,0 +1,42 @@
+.header {
+    display: grid;
+    grid-template-columns: 0.3fr 2fr 1fr 0.5fr;
+    grid-template-rows: repeat(1, 108px);
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header_pages {
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+}
+
+.pages {
+    color: #807D7E;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px 0px 0px 0px;
+}
+
+.current {
+    color: #3C4242;
+    font-weight: 700;
+}
+
+.header_personal {
+    display: flex;
+    justify-content: space-around;
+}
+
+a:hover {
+    color: #8A33FD;
+}

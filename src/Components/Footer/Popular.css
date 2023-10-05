@@ -1,0 +1,18 @@
+.popular {  
+    margin: 0 auto;
+    width: 80%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 0 100px;
+}
+
+.content-button {
+    cursor: pointer;
+}
+
+.content-button:hover {
+    color: #8A33FD;
+}

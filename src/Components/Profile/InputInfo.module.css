@@ -1,0 +1,43 @@
+.name {
+    color: #807D7E;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    justify-self: start;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.line {
+    background-color: #d6d6d6;
+    height: 2px;
+    margin: 15px 0 40px 0;
+}
