@@ -1,0 +1,14 @@
+.block {
+    display: flex;
+}
+
+.description {
+    color: #3C4242;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+}

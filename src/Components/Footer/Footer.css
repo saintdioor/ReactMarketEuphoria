@@ -10,6 +10,7 @@
     grid-template-columns: repeat(4, 1.2fr);
     margin: 0 auto;
     width: 80%;
+    margin-top: 70px;
 }
 
 .footer-information-block {

@@ -16,27 +16,44 @@
     font-weight: 600;
     display: flex;
     justify-content: start;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
-.addAddress {
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.buttons {
     display: flex;
-    justify-content: space-between;
-    height: 25px;
 }
 
-.addAddress>p {
-    margin: 0;
+.button {
+    margin: 20px 20px  0 0;
 }
 
-.addAddress>button {
+.submit {
+    border-style: none;
+    background-color: #8A33FD;
+    color: white;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
-    background-color: white;
-    border: none;
-    cursor: pointer;
+    border-radius: 8px;
+}
+
+.reset {
+    border-style: none;
+    background-color: #F6F6F6;
+    color: #807D7E;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
 }

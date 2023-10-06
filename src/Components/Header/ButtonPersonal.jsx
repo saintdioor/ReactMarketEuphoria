@@ -1,11 +1,13 @@
-import style from './ButtonPersonal.module.css'
+import style from "./ButtonPersonal.module.css";
 
 function Button(props) {
-    return(
-        <div className={`${style.button_personal} ${props.style}`}>
-            <img className={style.icon} src={props.src}></img>
-        </div>
-    );
+  return (
+    <a href={props.link}>
+      <div className={`${style.button_personal} ${props.style}`}>
+        <img className={style.icon} src={props.src}></img>
+      </div>
+    </a>
+  );
 }
 
 export default Button;

@@ -11,20 +11,20 @@ function Header() {
     return(
         <div className={style.header}>
             <div className={style.header_logo}>
-                <a href='./'><img className={style.header_logo_img} src={logo} alt=''/></a> 
+                <a href='/'><img className={style.header_logo_img} src={logo} alt=''/></a> 
             </div>
             <div className={style.header_pages}>
-                <a href='#' className={`${style.pages} ${style.current}`}>Shop</a>
-                <a href='#' className={style.pages}>Men</a>
-                <a href='#' className={style.pages}>Woman</a>
-                <a href='#' className={style.pages}>Combos</a>
-                <a href='#' className={style.pages}>Joggers</a>
+                <div><a href='/shop' className={`${style.pages} ${style.current}`}>Shop</a></div>
+                <div><a href='/men' className={style.pages}>Men</a></div>
+                <div><a href='/woman' className={style.pages}>Woman</a></div>
+                <div><a href='/combos' className={style.pages}>Combos</a></div>
+                <div><a href='/joggers' className={style.pages}>Joggers</a></div>
             </div>
             <Search className={style.header_search}/>
             <div className={style.header_personal}>
-                <ButtonPersonal src={heart}/>
-                <ButtonPersonal src={user}/>
-                <ButtonPersonal src={shop}/>
+                <ButtonPersonal link={'/favorite'} src={heart}/>
+                <ButtonPersonal link={'/account'} src={user}/>
+                <ButtonPersonal link={'/basket'} src={shop}/>
             </div>
         </div>
     );

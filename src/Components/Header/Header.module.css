@@ -9,13 +9,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
 .header_pages {
     display: grid;
     grid-template-columns: repeat(5, 160px);
+    margin: 0 auto;
 }
 
 .pages {

@@ -1,42 +1,38 @@
 .name {
-    margin: 0;
-    text-align: start;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-}
-
-.description {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    display: flex;
-    justify-content: start;
-    margin-bottom: 80px;
-}
-
-.addAddress {
-    display: flex;
-    justify-content: space-between;
-    height: 25px;
-}
-
-.addAddress>p {
-    margin: 0;
-}
-
-.addAddress>button {
+    color: #3C4242;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    background-color: white;
-    border: none;
-    cursor: pointer;
+    display: flex;
+    justify-self: start;
+}
+
+.description {
+    color: #807D7E;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: start;
+}
+
+.data {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 60px;
+    width: 80%;
+    padding-left: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
