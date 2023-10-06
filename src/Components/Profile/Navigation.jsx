@@ -4,7 +4,7 @@ import account from "./../../img/user.svg";
 import signout from "./../../img/signout.svg";
 import Button from "./Button";
 import active from "./Button.module.css";
-import style from "./Navigation.module.css";
+import style from "./../Profile/Navigation.module.css";
 
 export default function Navigation(props) {
   return (
@@ -17,7 +17,7 @@ export default function Navigation(props) {
         <Button link={"/myorders"} text={"My orders"} img={orders} />
         <Button link={"/wishlist"} text={"Wishlist"} img={heart} />
         <Button
-          link={"/myinfo"}
+          link={"/account"}
           text={"My info"}
           img={account}
           active={active.current}

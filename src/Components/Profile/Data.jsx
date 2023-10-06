@@ -1,5 +1,6 @@
 import InputInfo from "./InputInfo";
 import style from "./Data.module.css";
+import { NavLink } from "react-router-dom";
 
 export default function Data(props) {
   return (
@@ -16,7 +17,7 @@ export default function Data(props) {
       </div>
       <div className={style.addAddress}>
         <p className={style.description}>Address</p>
-        <button>Add New</button>
+        <NavLink to='/addaddress' className={style.button}>Add New</NavLink>
       </div>
     </div>
   );

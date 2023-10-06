@@ -1,12 +1,13 @@
+import { NavLink } from "react-router-dom";
 import style from "./ButtonPersonal.module.css";
 
 function Button(props) {
   return (
-    <a href={props.link}>
+    <NavLink to={props.link}>
       <div className={`${style.button_personal} ${props.style}`}>
         <img className={style.icon} src={props.src}></img>
       </div>
-    </a>
+    </NavLink>
   );
 }
 

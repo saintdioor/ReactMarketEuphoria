@@ -3,18 +3,20 @@ import Footer from './Components/Footer/Footer'
 import Profile from './Components/Profile/Profile'
 import AddAddress from './Components/AddAddress/AddAddress';
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header className='header'/>
+        <Header className='header' />
         <div>
-          <Route component={Profile}/>
-          <Route component={AddAddress}/>
+          <Routes>
+            <Route path='/account' Component={Profile} />
+            <Route path='/addaddress' Component={AddAddress} />
+          </Routes>
         </div>
-        <Footer className='footer'/>
+        <Footer className='footer' />
       </div>
     </BrowserRouter>
   );

@@ -14,7 +14,7 @@ export default function Navigation(props) {
         <p className={style.description}>Welcome to your Account</p>
       </div>
       <div>
-        <Button link={"/myorders"} text={"My orders"} img={orders} />
+        <Button link={"/account"} text={"My orders"} img={orders} />
         <Button link={"/wishlist"} text={"Wishlist"} img={heart} />
         <Button
           link={"/myinfo"}

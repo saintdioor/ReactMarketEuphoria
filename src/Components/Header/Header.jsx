@@ -6,19 +6,20 @@ import shop from './../../img/shopping-cart.svg'
 import ButtonPersonal from './ButtonPersonal'
 import Search from './Search'
 import current from './ButtonPersonal.module.css'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
     return(
         <div className={style.header}>
             <div className={style.header_logo}>
-                <a href='/'><img className={style.header_logo_img} src={logo} alt=''/></a> 
+                <NavLink to='/'><img className={style.header_logo_img} src={logo} alt=''/></NavLink> 
             </div>
             <div className={style.header_pages}>
-                <div><a href='/shop' className={`${style.pages} ${style.current}`}>Shop</a></div>
-                <div><a href='/men' className={style.pages}>Men</a></div>
-                <div><a href='/woman' className={style.pages}>Woman</a></div>
-                <div><a href='/combos' className={style.pages}>Combos</a></div>
-                <div><a href='/joggers' className={style.pages}>Joggers</a></div>
+                <div><NavLink to='/shop' className={`${style.pages} ${style.current}`}>Shop</NavLink></div>
+                <div><NavLink to='/men' className={style.pages}>Men</NavLink></div>
+                <div><NavLink to='/woman' className={style.pages}>Woman</NavLink></div>
+                <div><NavLink to='/combos' className={style.pages}>Combos</NavLink></div>
+                <div><NavLink to='/joggers' className={style.pages}>Joggers</NavLink></div>
             </div>
             <Search className={style.header_search}/>
             <div className={style.header_personal}>
