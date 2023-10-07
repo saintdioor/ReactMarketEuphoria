@@ -25,6 +25,10 @@
 }
 
 .current {
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+    margin: 0px 0px 0px 0px;
     color: #3C4242;
     font-weight: 700;
 }
@@ -32,6 +36,10 @@
 .header_personal {
     display: flex;
     justify-content: space-around;
+}
+
+.header_personal>a.active {
+    background-color: #8A33FD;
 }
 
 a:hover {

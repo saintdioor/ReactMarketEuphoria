@@ -8,10 +8,6 @@
     border-radius: 8px;
     cursor: pointer;
 }
-.button:hover, 
-.button:hover>input {
-    background-color: #8A33FD;
-}
 
 .icon {
     width: 20px;
@@ -26,4 +22,20 @@ input {
     font-size: 16px;
     background-color: #EAEAEA;
     cursor: pointer;
+}
+
+input::placeholder {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button:hover, 
+.button:hover>input {
+    background-color: #8A33FD;
+    color: white;
+}
+
+.button:hover>.icon,
+.button:hover>input::placeholder {
+    filter: brightness(10);
 }

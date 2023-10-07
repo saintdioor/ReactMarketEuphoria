@@ -3,10 +3,13 @@ import style from "./ButtonPersonal.module.css";
 
 function Button(props) {
   return (
-    <NavLink to={props.link}>
-      <div className={`${style.button_personal} ${props.style}`}>
-        <img className={style.icon} src={props.src}></img>
-      </div>
+    <NavLink
+      to={props.link}
+      className={(navData) =>
+        navData.isActive ? style.active : style.button_personal
+      }
+    >
+      <img className={style.icon} src={props.src} alt=''></img>
     </NavLink>
   );
 }

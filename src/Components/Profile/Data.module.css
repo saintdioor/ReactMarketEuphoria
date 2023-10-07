@@ -39,4 +39,10 @@
     background-color: white;
     border: none;
     cursor: pointer;
+    color: black;
+    padding-inline: 6px;
+}
+
+.button:hover {
+    color: black;
 }

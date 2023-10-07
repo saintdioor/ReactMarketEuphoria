@@ -9,12 +9,28 @@
     cursor: pointer;
 }
 
-.button_personal:hover {
+.button_personal:hover {  
     background-color: #8A33FD;
 }
 
-.current {
+.button_personal:hover>img{
+    filter: brightness(10);
+}
+
+a.active {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EAEAEA;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
     background-color: #8A33FD;
+}
+
+a.active>img{
+    filter: brightness(10);
 }
 
 .icon {
