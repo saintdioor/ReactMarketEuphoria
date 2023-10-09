@@ -5,7 +5,7 @@ import Data from './Data'
 const AddAddress = (props) => {
     return (
         <div className={style.page}>
-            <Navigation name={'Yaroslav'}/>
+            <Navigation name={props.dataUser.name}/>
             <Data/>
         </div>
     )

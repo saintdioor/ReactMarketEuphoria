@@ -71,7 +71,7 @@ function Header() {
       <div className={style.header_personal}>
         <ButtonPersonal link={"/favorite"} src={heart} />
         <ButtonPersonal link={"/account"} src={user} />
-        <ButtonPersonal link={"/basket"} src={shop} />
+        <ButtonPersonal link={"/cart"} src={shop} />
       </div>
     </div>
   );

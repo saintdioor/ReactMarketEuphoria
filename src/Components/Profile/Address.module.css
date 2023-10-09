@@ -1,0 +1,67 @@
+.block {
+    width: 450px;
+    height: max-content;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 70px;
+}
+
+.name {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: start;
+    margin: 0;
+}
+
+.number {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 80px;
+    margin: 0;
+    color: #807D7E;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.address {
+    font-size: 20px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 80px;
+    margin: 0;
+    color: #807D7E;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.button {
+    color: black;
+    background: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.button:hover {
+    color: #8A33FD;
+}

@@ -15,7 +15,6 @@ export default function Navigation(props) {
       </div>
       <div>
         <Button link={"/myorders"} text={"My orders"} img={orders} />
-        <Button link={"/wishlist"} text={"Wishlist"} img={heart} />
         <Button
           link={"/account"}
           text={"My info"}

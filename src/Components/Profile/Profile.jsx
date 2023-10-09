@@ -6,7 +6,7 @@ function Profile(props) {
   return (
     <div className={style.page}>
       <Navigation name={props.dataUser.name} />
-      <Data dataUser={props.dataUser}/>
+      <Data dataUser={props.dataUser} dataAddress={props.dataAddress}/>
     </div>
   );
 }

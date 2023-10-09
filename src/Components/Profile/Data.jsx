@@ -1,8 +1,11 @@
 import InputInfo from "./InputInfo";
+import Address from "./Address";
 import style from "./Data.module.css";
 import { NavLink } from "react-router-dom";
 
 export default function Data(props) {
+  let addresses = props.dataAddress.map(address => <Address key={address.id} name={address.name} surname={address.surname} number={address.number} address={address.address}/>)
+
   return (
     <div>
       <div>
@@ -18,6 +21,9 @@ export default function Data(props) {
       <div className={style.addAddress}>
         <p className={style.description}>Address</p>
         <NavLink to='/addaddress' className={style.button}>Add New</NavLink>
+      </div>
+      <div className={style.address}>
+        { addresses }
       </div>
     </div>
   );
