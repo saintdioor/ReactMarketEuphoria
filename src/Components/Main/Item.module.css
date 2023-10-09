@@ -1,0 +1,43 @@
+.card {
+    width: 270px;
+    margin: 0 auto;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.text {
+    text-align: start;
+}
+
+.text>h3,
+.text>p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.text>p {
+    color: #7F7F7F;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    align-items: center;
+    border-style: none;
+    border-radius: 50px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}

@@ -1,5 +1,4 @@
 import orders from "./../../img/orders.svg";
-import heart from "./../../img/heart.svg";
 import account from "./../../img/user.svg";
 import signout from "./../../img/signout.svg";
 import Button from "./Button";

@@ -1,0 +1,32 @@
+.block {
+    height: max-content;
+    width: 80%;
+    background-color: #3C4242;
+    border-radius: 12px;
+    margin: 100px;
+}
+
+.block>h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.block>p {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.block>p>b{
+    color: yellow;
+}
+
+
+.block>img {
+    margin: 20px;
+}
