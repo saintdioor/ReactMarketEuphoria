@@ -10,9 +10,9 @@ export default function Data(props) {
         <p className={style.description}>Contact Details</p>
       </div>
       <div>
-        <InputInfo text={"Your Name"} data={"Yaroslav Vavilkin"} />
-        <InputInfo text={"Email Address"} data={"vavilkinyaroslav@gmail.com"} />
-        <InputInfo text={"Phone Number"} data={"+79934466516"} />
+        <InputInfo text={"Your Name"} data={props.dataUser.name + ' ' + props.dataUser.surname} />
+        <InputInfo text={"Email Address"} data={props.dataUser.email} />
+        <InputInfo text={"Phone Number"} data={props.dataUser.phone} />
         <InputInfo text={"Password"} data={"********"} />
       </div>
       <div className={style.addAddress}>

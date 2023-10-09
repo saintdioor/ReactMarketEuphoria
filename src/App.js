@@ -6,14 +6,14 @@ import Error from './Components/Error/Error'
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
       <div className='App'>
         <Header className='header' />
         <div>
           <Routes>
-            <Route path='/account' Component={Profile} />
+            <Route path='/account' element={<Profile dataUser={props.dataUser}/>} />
             <Route path='/addaddress' Component={AddAddress} />
             <Route path='/' Component={Error} />
           </Routes>
