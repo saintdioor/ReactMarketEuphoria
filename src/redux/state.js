@@ -1,4 +1,4 @@
-let state = {
+const state = {
     user: {
         id: 1,
         name: 'Yaroslav',

@@ -1,8 +1,8 @@
-import './Button.css'
+import './Button.css';
 
 function Button(props) {
-    return(
-        <div className='button-link-social'>
+    return (
+        <div className="button-link-social">
             <img src={props.src}></img>
         </div>
     );
