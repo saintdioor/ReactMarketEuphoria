@@ -1,5 +1,7 @@
 .block {
     display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .description {
@@ -11,4 +13,10 @@
     font-weight: 400;
     line-height: normal;
     padding-left: 20px;
+}
+
+.check_box {
+    width: 25px;
+    padding: 0;
+    height: 25px;
 }

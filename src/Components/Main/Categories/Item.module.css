@@ -1,6 +1,6 @@
 .card {
-    width: 270px;
-    margin: 0 auto;
+    width: max-content;
+    
 }
 
 .description {
@@ -14,30 +14,18 @@
     text-align: start;
 }
 
-.text>h3,
-.text>p {
+.head_text,
+.text {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    color: black;
 }
 
-.text>p {
+.text {
     color: #7F7F7F;
     font-size: 16px;
     margin-top: 10px;
-}
-
-button {
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    font-weight: 600;
-    align-items: center;
-    border-style: none;
-    border-radius: 50px;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
 }

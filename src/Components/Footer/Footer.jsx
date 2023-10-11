@@ -4,12 +4,12 @@ import Download from './Download';
 import Line from './Line';
 import Popular from './Popular';
 
-import facebook from './../../img/facebook.svg';
-import instagram from './../../img/instagram.svg';
-import twitter from './../../img/twitter.svg';
-import linkedin from './../../img/linkedin.svg';
-import playmarket from './../../img/playmarket.svg';
-import appstore from './../../img/appstore.svg';
+import facebook from './../../img/footer/facebook.svg';
+import instagram from './../../img/footer/instagram.svg';
+import twitter from './../../img/footer/twitter.svg';
+import linkedin from './../../img/footer/linkedin.svg';
+import playmarket from './../../img/footer/playmarket.svg';
+import appstore from './../../img/footer/appstore.svg';
 
 function Footer() {
     return (

@@ -9,7 +9,7 @@ const Address = (props) => {
             <p className={style.address}>{props.address}</p>
             <div className={style.buttons}>
                 <button className={style.button}>Remove</button>
-                <NavLink className={style.button} to="/AddAddress">
+                <NavLink className={style.button} to="/account/address">
                     Edit
                 </NavLink>
             </div>

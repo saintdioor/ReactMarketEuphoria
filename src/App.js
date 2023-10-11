@@ -1,7 +1,7 @@
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 import Profile from './Components/Profile/Profile'
-import AddAddress from './Components/AddAddress/AddAddress';
+import AddAddress from './Components/Profile/AddAddress/AddAddress';
 import Error from './Components/Error/Error'
 import Cart from './Components/Cart/Cart'
 import Main from './Components/Main/Main'
@@ -26,7 +26,7 @@ function App(props) {
                             }
                         />
                         <Route
-                            path='/addaddress'
+                            path='/account/address'
                             element={
                                 <AddAddress
                                     dataUser={props.dataUser}
@@ -53,6 +53,11 @@ function App(props) {
                                 <Main
                                     men={props.categoriesMen}
                                     women={props.categoriesWomen}
+                                    brands={props.brands}
+                                    sales_line_1={props.sales_line_1}
+                                    sales_line_2={props.sales_line_2}
+                                    deals={props.deals}
+                                    new_arrival={props.new_arrival}
                                 />
                             }
                         />

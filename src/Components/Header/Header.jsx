@@ -1,8 +1,8 @@
 import style from './../Header/Header.module.css';
-import logo from './../../img/logo.svg';
-import heart from './../../img/heart.svg';
-import user from './../../img/user.svg';
-import shop from './../../img/shopping-cart.svg';
+import logo from './../../img/header/logo.svg';
+import heart from './../../img/header/heart.svg';
+import user from './../../img/header/user.svg';
+import shop from './../../img/header/shopping-cart.svg';
 import ButtonPersonal from './ButtonPersonal';
 import Search from './Search';
 import { NavLink } from 'react-router-dom';
@@ -41,7 +41,7 @@ function Header() {
                         className={(navData) =>
                             navData.isActive ? style.current : style.pages
                         }
-                        to="/woman"
+                        to="/women"
                     >
                         Woman
                     </NavLink>

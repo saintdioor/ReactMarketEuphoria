@@ -1,5 +1,5 @@
-import style from './Profile.module.css';
-import Navigation from '../Profile/Navigation';
+import style from './../Profile.module.css';
+import Navigation from './../Navigation';
 import Data from './Data';
 
 const AddAddress = (props) => {

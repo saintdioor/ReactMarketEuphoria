@@ -1,0 +1,60 @@
+.banner {
+    position: relative;
+    width: 87%;
+    margin: 0 auto;
+    height: 670px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.banner>div {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: 530px;
+    height: 350px;
+    text-align: start;
+}
+
+.banner>div>h1 {
+    text-align: start;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.banner>div>p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    height: 60px;
+    width: 230px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.button>p{
+    padding: 0;
+    margin: 0;
+}
+
+.button:hover {
+    color: white;
+    background-color: #8A33FD;
+}
+
+.banner>img {
+    width: 100%;
+    object-fit: fill;
+}

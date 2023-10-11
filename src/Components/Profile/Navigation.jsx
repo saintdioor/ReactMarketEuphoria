@@ -1,6 +1,6 @@
-import orders from './../../img/orders.svg';
-import account from './../../img/user.svg';
-import signout from './../../img/signout.svg';
+import orders from './../../img/profile/orders.svg';
+import account from './../../img/profile/user.svg';
+import sign_out from './../../img/profile/sign_out.svg';
 import Button from './Button';
 import active from './Button.module.css';
 import style from './../Profile/Navigation.module.css';
@@ -13,14 +13,14 @@ export default function Navigation(props) {
                 <p className={style.description}>Welcome to your Account</p>
             </div>
             <div>
-                <Button link={'/myorders'} text={'My orders'} img={orders} />
+                <Button link={'/account/my_orders'} text={'My orders'} img={orders} />
                 <Button
                     link={'/account'}
                     text={'My info'}
                     img={account}
                     active={active.current}
                 />
-                <Button link={'/signout'} text={'Sign out'} img={signout} />
+                <Button link={'/account/sign_out'} text={'Sign out'} img={sign_out} />
             </div>
         </div>
     );

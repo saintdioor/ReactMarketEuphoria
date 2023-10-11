@@ -1,55 +1,6 @@
 .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.banner {
-    position: relative;
-    width: 80%;
-    height: 800px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
-}
-
-.banner>div {
-    position: absolute;
-    top: 25%;
-    left: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-    width: 530px;
-    height: 350px;
-    text-align: start;
-}
-
-.banner>div>h1 {
-    text-align: start;
-    font-weight: 900;
-    font-size: 40px;
-}
-
-.banner>div>p {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.button {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    border-style: none;
-    border-radius: 8px;
-}
-
-.button:hover {
-    background-color: #8A33FD;
-    color: white;
-}
-
-.banner>img {
-    width: 100%;
-    object-fit: fill;
+    margin: 0 auto;
+    width: 1440px;
 }

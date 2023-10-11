@@ -1,0 +1,36 @@
+.content {
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.head {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: start;
+    border-left: 5px solid #8A33FD;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+.block {
+    margin: 0 auto;
+}
+
+.sale {
+    height: max-content;
+    margin-bottom: 20px;
+}
+
+.line_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line_2 {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,17 +1,16 @@
 .block {
-    width: 450px;
+    width: 310px;
     height: max-content;
     background-color: #F6F6F6;
     border-radius: 12px;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
     padding: 30px;
-    margin: 20px;
-    margin-top: 70px;
+    margin-top: 15px;
 }
 
 .name {
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     text-align: start;
@@ -19,7 +18,7 @@
 }
 
 .number {
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     text-align: start;
@@ -31,7 +30,7 @@
 }
 
 .address {
-    font-size: 20px;
+    font-size: 16px;
     height: 50px;
     font-style: normal;
     font-weight: 500;

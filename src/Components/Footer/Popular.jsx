@@ -1,5 +1,5 @@
 import './Popular.css';
-import more from './../../img/more.svg';
+import more from './../../img/footer/more.svg';
 
 function Popular() {
     return (

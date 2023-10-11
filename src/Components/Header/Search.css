@@ -3,10 +3,11 @@
     justify-content: space-around;
     align-items: center;
     background-color: #EAEAEA;
-    width: 270px;
-    height: 50px;
+    width: 200px;
+    height: 45px;
     border-radius: 8px;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .icon {
@@ -22,10 +23,11 @@ input {
     font-size: 16px;
     background-color: #EAEAEA;
     cursor: pointer;
+    width: 145px;
 }
 
 input::placeholder {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 

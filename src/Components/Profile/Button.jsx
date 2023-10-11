@@ -7,7 +7,7 @@ export default function Button(props) {
                 className={`${style.button_nav} ${props.active}`}
                 to={props.link}
             >
-                <img src={props.img}></img>
+                <img src={props.img} alt={props.text}></img>
                 <div>
                     <p>{props.text}</p>
                 </div>

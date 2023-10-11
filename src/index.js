@@ -12,6 +12,11 @@ root.render(
             dataAddress={state.address}
             cart={state.cart}
             categoriesMen={state.men}
-            categoriesWomen={state.women} />
+            categoriesWomen={state.women}
+            brands={state.brands}
+            sales_line_1={state.sales_line_1}
+            sales_line_2={state.sales_line_2}
+            deals={state.deals}
+            new_arrival={state.new_arrival} />
     </React.StrictMode>
 );

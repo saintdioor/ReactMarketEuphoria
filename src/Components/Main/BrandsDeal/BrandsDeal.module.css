@@ -1,9 +1,11 @@
 .block {
     height: max-content;
-    width: 80%;
+    width: 87%;
     background-color: #3C4242;
     border-radius: 12px;
-    margin: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .block>h1 {
@@ -22,7 +24,7 @@
     font-size: 20px;
 }
 
-.block>p>b{
+.block>p>b {
     color: yellow;
 }
 

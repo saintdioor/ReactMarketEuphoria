@@ -1,0 +1,47 @@
+.image {
+    width: 100%;
+    height: max-content;
+}
+
+.block {
+    position: absolute;
+    text-align: start;
+    top: 15%;
+    left: 38%;
+    width: 450px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.clothes, .description {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.name {
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    height: 60px;
+    width: 270px;
+    font-size: 25px;
+    border-radius: 12px;
+}
+
+.link>p{
+    padding: 0;
+    margin: 0;
+}
+
+.link:hover {
+    color: white;
+    background-color: #8A33FD;
+}
