@@ -1,0 +1,16 @@
+.block {
+    display: grid;
+    grid-template-columns: 505px 100px 200px 150px 100px 1fr;
+    background-color: #3C4242;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.first {
+    text-align: start;
+}

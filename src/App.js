@@ -9,6 +9,7 @@ import Main from './Components/Main/Main'
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+
 function App(props) {
     return (
         <BrowserRouter>
@@ -20,8 +21,8 @@ function App(props) {
                             path='/account'
                             element={
                                 <Profile
-                                    dataUser={props.dataUser}
-                                    dataAddress={props.dataAddress}
+                                    dataUser={props.state.user}
+                                    dataAddress={props.state.address}
                                 />
                             }
                         />
@@ -29,7 +30,7 @@ function App(props) {
                             path='/account/address'
                             element={
                                 <AddAddress
-                                    dataUser={props.dataUser}
+                                    dataUser={props.state.user}
                                 />
                             }
                         />
@@ -43,7 +44,7 @@ function App(props) {
                             path='/cart'
                             element={
                                 <Cart
-                                    data={props.cart}
+                                    data={props.state.cart}
                                 />
                             }
                         />
@@ -51,13 +52,13 @@ function App(props) {
                             path='/main'
                             element={
                                 <Main
-                                    men={props.categoriesMen}
-                                    women={props.categoriesWomen}
-                                    brands={props.brands}
-                                    sales_line_1={props.sales_line_1}
-                                    sales_line_2={props.sales_line_2}
-                                    deals={props.deals}
-                                    new_arrival={props.new_arrival}
+                                    men={props.state.men}
+                                    women={props.state.women}
+                                    brands={props.state.brands}
+                                    salesLine1={props.state.salesLine1}
+                                    salesLine2={props.state.salesLine2}
+                                    deals={props.state.deals}
+                                    newArrival={props.state.newArrival}
                                 />
                             }
                         />

@@ -12,10 +12,10 @@ const Main = (props) => {
         <div className={style.content}>
             <MainBanner />
             <Deals data={props.deals} />
-            <NewArrival data={props.new_arrival} />
+            <NewArrival data={props.newArrival} />
             <BigSaveZone
-                data_line_1={props.sales_line_1}
-                data_line_2={props.sales_line_2}
+                dataLine1={props.salesLine1}
+                dataLine2={props.salesLine2}
             />
             <SecondBanner />
             <Categories title={'Men'} data={props.men} />

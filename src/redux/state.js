@@ -22,8 +22,11 @@ import new_arrival_1 from './../img/new_arrival/image1.png';
 import new_arrival_2 from './../img/new_arrival/image2.png';
 import new_arrival_3 from './../img/new_arrival/image3.png';
 import new_arrival_4 from './../img/new_arrival/image4.png';
+import cart_image_1 from './../img/cart/image1.png';
+import cart_image_2 from './../img/cart/image2.png';
+import cart_image_3 from './../img/cart/image3.png';
 
-const state = {
+let state = {
     user: {
         id: 1,
         name: 'Yaroslav',
@@ -56,7 +59,38 @@ const state = {
         }
     ],
 
-    cart: [],
+    cart: [
+        {   
+            id: 1,
+            image: cart_image_1,
+            title: 'Blue Flower Print Crop Top',
+            color: 'Yellow',
+            size: 'M',
+            price: 29.00,
+            quantity: 1,
+            shipping: 'FREE'
+        },
+        {   
+            id: 2,
+            image: cart_image_2,
+            title: 'Levender Hoodie',
+            color: 'Levender',
+            size: 'XXL',
+            price: 119.00,
+            quantity: 1,
+            shipping: 'FREE'
+        },
+        {   
+            id: 3,
+            image: cart_image_3,
+            title: 'Black Sweatshirt',
+            color: 'Black',
+            size: 'XXL',
+            price: 61.00,
+            quantity: 2,
+            shipping: 5.00
+        }
+    ],
 
     men: [
         {
@@ -127,7 +161,7 @@ const state = {
         },
     ],
 
-    sales_line_1: [
+    salesLine1: [
         {
             id: 1,
             img: sale_1_1
@@ -142,7 +176,7 @@ const state = {
         }
     ],
 
-    sales_line_2: [
+    salesLine2: [
         {
             id: 4,
             img: sale_2_1
@@ -170,7 +204,7 @@ const state = {
         }
     ],
 
-    new_arrival: [
+    newArrival: [
         {
             id: 1,
             img: new_arrival_1,
