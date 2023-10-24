@@ -14,16 +14,7 @@ export default function Data(props) {
         const userData = ref(db, 'users/' + auth.currentUser.uid);
         onValue(userData, (snapshot) => {
             const data = snapshot.val();
-            let dataError = {};
-            if (data == null) {
-                dataError.name = 'Empty';
-                dataError.surname = 'Empty';
-                dataError.phone = 'Empty';
-                dataError.email = 'Empty';
-                setUser(dataError);
-            } else {
-                setUser(data);
-            }
+            setUser(data);
         });
     }
 
@@ -50,10 +41,10 @@ export default function Data(props) {
             <div>
                 <InputInfo
                     text={'Your Name'}
-                    data={user.name + ' ' + user.surname}
+                    data={`${user?.name} ${user?.surname}`}
                 />
-                <InputInfo text={'Email Address'} data={user.email} />
-                <InputInfo text={'Phone Number'} data={'+' + user.phone} />
+                <InputInfo text={'Email Address'} data={user?.email} />
+                <InputInfo text={'Phone Number'} data={`+${user?.phone}`} />
                 <InputInfo text={'Password'} data={'********'} />
             </div>
             <div className={style.addAddress}>
