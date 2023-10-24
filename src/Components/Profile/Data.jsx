@@ -2,8 +2,35 @@ import InputInfo from './InputInfo';
 import Address from './Address';
 import style from './Data.module.css';
 import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
+import { auth, db } from '../../firebase';
+import { getDatabase, ref, onValue } from 'firebase/database';
 
 export default function Data(props) {
+    const [user, setUser] = useState('');
+
+    async function fetchData() {
+        const userData = ref(db, 'users/' + auth.currentUser.uid);
+        onValue(userData, (snapshot) => {
+            const data = snapshot.val();
+            let dataError = {};
+            if (data == null) {
+                dataError.name = 'Empty';
+                dataError.surname = 'Empty';
+                dataError.phone = 'Empty';
+                dataError.email = 'Empty';
+                setUser(dataError);
+            } else {
+                setUser(data);
+            }
+        });
+    }
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
     const addresses = props.dataAddress.map((address) => (
         <Address
             key={address.id}
@@ -23,10 +50,10 @@ export default function Data(props) {
             <div>
                 <InputInfo
                     text={'Your Name'}
-                    data={props.dataUser.name + ' ' + props.dataUser.surname}
+                    data={user.name + ' ' + user.surname}
                 />
-                <InputInfo text={'Email Address'} data={props.dataUser.email} />
-                <InputInfo text={'Phone Number'} data={props.dataUser.phone} />
+                <InputInfo text={'Email Address'} data={user.email} />
+                <InputInfo text={'Phone Number'} data={'+' + user.phone} />
                 <InputInfo text={'Password'} data={'********'} />
             </div>
             <div className={style.addAddress}>

@@ -25,8 +25,19 @@ import new_arrival_4 from './../img/new_arrival/image4.png';
 import cart_image_1 from './../img/cart/image1.png';
 import cart_image_2 from './../img/cart/image2.png';
 import cart_image_3 from './../img/cart/image3.png';
+import login from './../img/authorization/login.png';
+import signup from './../img/authorization/signup.png';
+import twitter_logo from './../img/authorization/twitter.png';
+import google_logo from './../img/authorization/google.png';
 
 let state = {
+    authorization: {
+        login: login,
+        signup: signup,
+        twitter_logo: twitter_logo,
+        google_logo: google_logo
+    },
+
     user: {
         id: 1,
         name: 'Yaroslav',
@@ -60,7 +71,7 @@ let state = {
     ],
 
     cart: [
-        {   
+        {
             id: 1,
             image: cart_image_1,
             title: 'Blue Flower Print Crop Top',
@@ -70,7 +81,7 @@ let state = {
             quantity: 1,
             shipping: 'FREE'
         },
-        {   
+        {
             id: 2,
             image: cart_image_2,
             title: 'Levender Hoodie',
@@ -80,7 +91,7 @@ let state = {
             quantity: 1,
             shipping: 'FREE'
         },
-        {   
+        {
             id: 3,
             image: cart_image_3,
             title: 'Black Sweatshirt',

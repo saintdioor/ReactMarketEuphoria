@@ -1,0 +1,43 @@
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EAEAEA;
+    width: 200px;
+    height: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    border-style: none;
+    outline:none;
+    font-size: 16px;
+    background-color: #EAEAEA;
+    cursor: pointer;
+    width: 145px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button:hover, 
+.button:hover>input {
+    background-color: #8A33FD;
+    color: white;
+}
+
+.button:hover>.icon,
+.button:hover>input::placeholder {
+    filter: brightness(10);
+}

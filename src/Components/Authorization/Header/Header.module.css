@@ -1,0 +1,45 @@
+.header {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.5fr;
+    grid-template-rows: repeat(1, 110px);
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header_pages {
+    display: grid;
+    grid-template-columns: repeat(5, 120px);
+    margin: 0 auto;
+}
+
+.header_personal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.active {
+    background-color: #8A33FD;
+    color: white;
+    border-radius: 8px;
+    border: solid 1px #8A33FD;
+}
+
+.active:hover {
+    background-color: white;
+    color: #8A33FD;
+}
+
+.no_active {
+    background-color: white;
+    color: #8A33FD;
+    border-radius: 8px;
+    border: solid 1px #3C4242;
+}
+
+.no_active:hover {
+    border: solid 1px #8A33FD;
+    color: #8A33FD;
+}

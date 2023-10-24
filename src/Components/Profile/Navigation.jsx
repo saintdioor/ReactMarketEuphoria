@@ -20,7 +20,7 @@ export default function Navigation(props) {
                     img={account}
                     active={active.current}
                 />
-                <Button link={'/account/sign_out'} text={'Sign out'} img={sign_out} />
+                <Button id={'sign-out'} link={'/'} text={'Sign out'} img={sign_out} />
             </div>
         </div>
     );

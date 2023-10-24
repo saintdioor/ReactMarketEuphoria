@@ -11,7 +11,7 @@ function Header() {
     return (
         <div className={style.header}>
             <div className={style.header_logo}>
-                <NavLink to="/main">
+                <NavLink to="/">
                     <img className={style.header_logo_img} src={logo} alt="" />
                 </NavLink>
             </div>

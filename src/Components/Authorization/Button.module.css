@@ -1,0 +1,20 @@
+.button {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 567px;
+    height: 58px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #8A33FD;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button>div {
+    padding: 10px;
+}
