@@ -55,6 +55,10 @@ function App(props) {
                                     input_email='Email Address'
                                     id='signup'
                                     text_btn_submit='Sign Up'
+                                    question='Already have an  account?'
+                                    href='Log in'
+                                    link='/login'
+                                    error_message='An account with this email already exists'
                                 />
                             } />
                         <Route />
@@ -68,6 +72,10 @@ function App(props) {
                                     input_email='User name or email address'
                                     id='login'
                                     text_btn_submit='Sign In'
+                                    question='Don’t have an account?'
+                                    href='Sign up'
+                                    link='/signup'
+                                    error_message='Wrong login or password'
                                 />
                             } />
                         <Route />

@@ -4,26 +4,19 @@ import style from './Data.module.css';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-import { auth, db } from '../../firebase';
 import { getDatabase, ref, onValue } from 'firebase/database';
+import { getAuth } from 'firebase/auth';
 
-export default function Data(props) {
+export default function Data() {
     const [user, setUser] = useState('');
 
     async function fetchData() {
+        const db = getDatabase();
+        const auth = getAuth();
         const userData = ref(db, 'users/' + auth.currentUser.uid);
         onValue(userData, (snapshot) => {
             const data = snapshot.val();
-            let dataError = {};
-            if (data == null) {
-                dataError.name = 'Empty';
-                dataError.surname = 'Empty';
-                dataError.phone = 'Empty';
-                dataError.email = 'Empty';
-                setUser(dataError);
-            } else {
-                setUser(data);
-            }
+            setUser(data);
         });
     }
 
@@ -31,12 +24,12 @@ export default function Data(props) {
         fetchData();
     }, []);
 
-    const addresses = props.dataAddress.map((address) => (
+    const addresses = user?.addresses?.map((address) => (
         <Address
-            key={address.id}
+            key={address.key}
             name={address.name}
             surname={address.surname}
-            number={address.number}
+            number={address.phone}
             address={address.address}
         />
     ));
@@ -50,10 +43,10 @@ export default function Data(props) {
             <div>
                 <InputInfo
                     text={'Your Name'}
-                    data={user.name + ' ' + user.surname}
+                    data={`${user?.name} ${user?.surname}`}
                 />
-                <InputInfo text={'Email Address'} data={user.email} />
-                <InputInfo text={'Phone Number'} data={'+' + user.phone} />
+                <InputInfo text={'Email Address'} data={user?.email} />
+                <InputInfo text={'Phone Number'} data={`+${user?.phone}`} />
                 <InputInfo text={'Password'} data={'********'} />
             </div>
             <div className={style.addAddress}>

@@ -1,13 +1,14 @@
 import style from './Button.module.css';
 import { NavLink } from 'react-router-dom';
-import { auth } from './../../firebase';
-import { signOut } from 'firebase/auth';
+import { useDispatch } from 'react-redux';
+import { useAuth } from './../../hooks/use-auth';
+import { removeUser } from '../../store/slice/userSlice';
 
 export default function Button(props) {
+    const dispatch = useDispatch();
+
     const navigationListener = () => {
-        if (props.id == 'sign-out') {
-            signOut(auth).then();
-        }
+        if (props.id == 'sign-out') dispatch(removeUser());
     };
 
     return (

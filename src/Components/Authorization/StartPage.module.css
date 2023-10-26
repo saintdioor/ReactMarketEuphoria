@@ -54,6 +54,11 @@
 .field {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
+}
+
+.field>label {
+    margin-bottom: 10px;
 }
 
 .input {
@@ -64,7 +69,28 @@
     background-color: white;
     color: #807D7E;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.rules {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    width: max-content;
+    height: max-content;
+    margin-right: 10px;
+}
+
+.question {
+    display: flex;
+}
+
+.link {
+    text-decoration: underline;
+    color: black;
 }
