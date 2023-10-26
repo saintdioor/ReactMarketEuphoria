@@ -1,16 +1,9 @@
 import { Navigate, Outlet } from 'react-router-dom';
-import { auth } from './../../firebase';
+import { useAuth } from './../../hooks/use-auth';
 
 const PrivateRoute = () => {
-    let authToken;
-
-    try {
-        authToken = auth.currentUser.accessToken;
-    } catch (error) {
-        authToken = false;
-    }
-
-    return authToken ? <Outlet /> : <Navigate to="/login" />;
+    const { isAuth } = useAuth();
+    return isAuth ? <Outlet /> : <Navigate to="/login" />;
 };
 
 export default PrivateRoute;

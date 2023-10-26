@@ -2,7 +2,7 @@ import style from './Button.module.css';
 
 const Button = (props) => {
     return (
-        <div>
+        <div onClick={props.onClick}>
             <button className={style.button}>
                 <div>
                     <img src={props.image_btn} alt="social_img" />

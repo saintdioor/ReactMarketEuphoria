@@ -5,8 +5,8 @@ import Data from './Data';
 function Profile(props) {
     return (
         <div className={style.page}>
-            <Navigation name={props.dataUser.name} />
-            <Data dataUser={props.dataUser} dataAddress={props.dataAddress} />
+            <Navigation/>
+            <Data dataAddress={props.dataAddress} />
         </div>
     );
 }
