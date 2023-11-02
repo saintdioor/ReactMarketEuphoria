@@ -3,7 +3,12 @@ import style from './Categories.module.css';
 
 const Categories = (props) => {
     let items = props.data.map((card) => (
-        <Item key={card.id} name={card.name} img={card.img} gender={props.title}/>
+        <Item
+            key={card.id}
+            name={card.name}
+            img={card.img}
+            gender={props.title}
+        />
     ));
     return (
         <div className={style.block}>

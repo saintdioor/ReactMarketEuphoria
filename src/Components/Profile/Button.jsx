@@ -1,7 +1,6 @@
 import style from './Button.module.css';
 import { NavLink } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { useAuth } from './../../hooks/use-auth';
 import { removeUser } from '../../store/slice/userSlice';
 
 export default function Button(props) {
@@ -14,7 +13,9 @@ export default function Button(props) {
     return (
         <div className={style.btn}>
             <NavLink
-                className={`${style.button_nav} ${props.active}`}
+            className={(navData) =>
+                navData.isActive ? `${style.button_nav} ${style.active}` : style.button_nav
+            }
                 to={props.link}
                 onClick={navigationListener}
             >

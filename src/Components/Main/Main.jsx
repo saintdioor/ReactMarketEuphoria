@@ -13,10 +13,7 @@ const Main = (props) => {
             <MainBanner />
             <Deals data={props.deals} />
             <NewArrival data={props.newArrival} />
-            <BigSaveZone
-                dataLine1={props.salesLine1}
-                dataLine2={props.salesLine2}
-            />
+            <BigSaveZone data={props.saving}/>
             <SecondBanner />
             <Categories title={'Men'} data={props.men} />
             <Categories title={'Women'} data={props.women} />

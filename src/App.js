@@ -9,6 +9,8 @@ import StartPage from './Components/Authorization/StartPage';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PrivateRoute from './utils/router/privateRoute';
+import OrdersPage from './Components/Orders/OrdersPage';
+import Market from './Components/Market/Market';
 
 function App(props) {
     return (
@@ -21,28 +23,37 @@ function App(props) {
                                 path='/account'
                                 element={[
                                     <Header className='header' />,
-                                    <Profile
-                                        dataUser={props.state.user}
-                                        dataAddress={props.state.address}
-                                    />
+                                    <Profile />
+                                ]} />
+                            <Route
+                                path='/orders'
+                                element={[
+                                    <Header className='header' />,
+                                    <OrdersPage data={props.state.order}/>
                                 ]} />
                             <Route
                                 path='/account/address'
                                 element={[
                                     <Header className='header' />,
-                                    <AddAddress
-                                        dataUser={props.state.user}
-                                    />
+                                    <AddAddress />
                                 ]} />
                             <Route
                                 path='/cart'
                                 element={[
                                     <Header className='header' />,
-                                    <Cart
-                                        data={props.state.cart}
-                                    />
+                                    <Cart data={props.state.cart} />
                                 ]}
                             />
+                        </Route>
+                        <Route path='/women'
+                            element={
+                                [
+                                    <Header className='header' />,
+                                    <Market/>
+                                ]
+                            }
+                        >
+
                         </Route>
                         <Route path='/signup'
                             element={
@@ -87,15 +98,16 @@ function App(props) {
                                     men={props.state.men}
                                     women={props.state.women}
                                     brands={props.state.brands}
-                                    salesLine1={props.state.salesLine1}
-                                    salesLine2={props.state.salesLine2}
                                     deals={props.state.deals}
                                     newArrival={props.state.newArrival}
+                                    saving={props.state.saving}
                                 />
                             ]} />
                         <Route path='*'
-                            element={
+                            element={[
+                                <Header className='header' />,
                                 <Error />
+                            ]
                             } />
                         <Route />
                     </Routes>

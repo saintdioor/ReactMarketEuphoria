@@ -12,7 +12,7 @@ const Error = () => {
                 temporarily.
             </p>
             <button className={style.btn}>
-                <NavLink to={'/'}>Back to HomePage</NavLink>
+                <NavLink className={style.btn_text}to={'/'}>Back to HomePage</NavLink>
             </button>
         </div>
     );

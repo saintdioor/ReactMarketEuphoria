@@ -1,25 +1,26 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  width: 1440px;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 1440px;
+    margin: 0 auto;
+    user-select: none;
 }
 
 .header {
-  position: relative;
-  width: 80%;
+    position: relative;
+    width: 80%;
 }
 
 .footer {
-  width: 100%;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }

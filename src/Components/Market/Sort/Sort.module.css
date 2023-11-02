@@ -1,0 +1,36 @@
+.block {
+    width: 25%;
+    border-left: 1px solid #BEBCBD;
+    border-right: 1px solid #BEBCBD;
+    border-bottom: 1px solid #BEBCBD;
+    height: min-content;
+}
+
+.head {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #807D7E;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: 1px solid #BEBCBD;
+    border-bottom: 1px solid #BEBCBD;
+}
+
+.head>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    transform: rotate(90deg);
+}
+
+.slider {
+    margin: 0 auto;
+    width: 230px;
+}

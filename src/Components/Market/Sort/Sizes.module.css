@@ -1,0 +1,33 @@
+.block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.size {
+    border: 1px solid #BEBCBD;
+    color: black;
+    border-radius: 8px;
+    width: 61px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.size:hover {
+    background-color: #8A33FD;
+    color: white;
+    transform: scale(1.07);
+}

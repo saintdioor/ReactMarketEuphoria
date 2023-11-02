@@ -23,8 +23,12 @@
 .sale {
     height: max-content;
     margin-bottom: 20px;
+    transition: transform 0.3s;
 }
 
+.sale:hover {
+    transform: scale(1.05);
+}
 .line_1 {
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,45 @@
+.rc-slider-track {
+    background-color: #8A33FD;
+}
+
+.rc-slider-handle {
+    background-color: #8A33FD;
+    border: none;
+    opacity: 1;
+    transition: transform 0.3s;
+    border-color: #8A33FD !important;
+    box-shadow: 0 0 0 2px #8A33FD !important;
+}
+
+.rc-slider-handle:hover,
+.rc-slider-handle:active {
+    transform: scale(1.5) !important;
+}
+
+.rc-slider-rail {
+    background-color: #cbcbcb ;
+}
+
+.input {
+    all: unset;
+}
+
+.slider {
+    margin-top: 25px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.custom_input {
+    width: 97px;
+    height: 32px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #BEBCBD;
+    background-color: white;
+}

@@ -2,17 +2,32 @@ import style from './BigSavingZone.module.css';
 import { NavLink } from 'react-router-dom';
 
 const BigSaveZone = (props) => {
-    const dataLine1 = props.dataLine1.map((sale) => (
-        <NavLink key={sale.id} className={style.sale} to="/shop">
-            <img className={style.banner} src={sale.img} alt="sale_1_1" />
-        </NavLink>
-    ));
+    const dataLine1 = [];
+    for (let index = 0; index < 3; index++) {
+        console.log(props.data[0]);
+        dataLine1.push(
+            <NavLink key={index} className={style.sale} to="/shop">
+                <img
+                    className={style.banner}
+                    src={props.data[index].image}
+                    alt={'sale'}
+                />
+            </NavLink>
+        );
+    }
 
-    const dataLine2 = props.dataLine2.map((sale) => (
-        <NavLink key={sale.id} className={style.sale} to="/shop">
-            <img className={style.banner} src={sale.img} alt="sale_1_1" />
-        </NavLink>
-    ));
+    const dataLine2 = [];
+    for (let index = 3; index < 5; index++) {
+        dataLine2.push(
+            <NavLink key={index} className={style.sale} to="/shop">
+                <img
+                    className={style.banner}
+                    src={props.data[index].image}
+                    alt={'sale'}
+                />
+            </NavLink>
+        );
+    }
 
     return (
         <div className={style.content}>

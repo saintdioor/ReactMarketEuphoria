@@ -42,7 +42,13 @@
     font-size: 18px;
     font-weight: bold;
     border-radius: 12px;
+    transition: transform 0.3s;
 }
+
+.button:hover {
+    transform: scale(1.1);
+}
+
 
 .button>p{
     padding: 0;

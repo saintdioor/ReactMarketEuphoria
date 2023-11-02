@@ -1,0 +1,99 @@
+.block {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid #EDEEF2;
+    margin-bottom: 20px;
+}
+
+.header {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px 35px 20px 35px;
+    border-radius: 8px;
+}
+
+.number_order {
+    color: black;
+    text-align: start;
+    font-size: 20px;
+}
+
+.information_order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_right {
+    text-align: end;
+}
+
+.block_left {
+    text-align: start;
+}
+
+.text {
+    font-size: 14px;
+    color: #807D7E
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.item_description {
+    text-align: start;
+}
+
+.item_description>p {
+    margin: 10px;
+    margin-left: 20px;
+    color: #BEBCBD;
+    font-size: 14px;
+}
+
+.item_description>p>b {
+    color: black;
+}
+
+.image_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 96px;
+    height: 96px;
+    
+}
+
+.left_block_item {
+    display: flex;
+}
+
+.right_block_item {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    color: white;
+    background-color: #8A33FD;
+    border-style: none;
+    width: 144px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #8A33FD;
+}
+
+.button:hover {
+    color: #8A33FD;
+    background-color: white;
+}

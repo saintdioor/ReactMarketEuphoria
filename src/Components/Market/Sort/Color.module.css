@@ -1,0 +1,32 @@
+.block {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #8A8989;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.block:hover {  
+    transform: scale(1.1);
+}
+
+.color {
+    width: 37px;
+    height: 37px;
+    border-radius: 12px;
+    align-items: center;
+    border: 0.1px solid #8A8989;
+}
+
+.color_name {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

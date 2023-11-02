@@ -1,0 +1,25 @@
+.head {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #807D7E;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: 1px solid #BEBCBD;
+    border-bottom: 1px solid #BEBCBD;
+}
+
+.head>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: rotate(90deg);
+}

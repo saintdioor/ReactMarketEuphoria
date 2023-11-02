@@ -3,6 +3,10 @@
     width: 65%;
 }
 
+.active {
+    background-color: #F6F6F6 !important;
+}
+
 .button_nav {
     display: grid;
     grid-template-columns: 1fr 3fr;

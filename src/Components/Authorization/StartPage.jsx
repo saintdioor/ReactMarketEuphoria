@@ -2,6 +2,8 @@ import style from './StartPage.module.css';
 import Header from './Header/Header';
 import Button from './Button';
 
+import eye from './../../img/authorization/eye.svg';
+
 import { useEffect, useRef, useState } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -21,10 +23,16 @@ const StartPage = (props) => {
     const location = useLocation();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [passwordVisible, setPasswordVisible] = useState(false);
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const errorMessage = useRef();
     const privacyPolice = useRef();
+    const myCheckBox = useRef();
+
+    const togglePasswordVisibility = () => {
+        setPasswordVisible(!passwordVisible);
+    };
 
     const submit = (e) => {
         e.preventDefault();
@@ -57,7 +65,7 @@ const StartPage = (props) => {
                         email: userCredential.user.email,
                         phone: 7_999_999_99_99,
                         cart: '',
-                        addresses: ''
+                        addresses: '',
                     });
 
                     dispatch(
@@ -78,9 +86,15 @@ const StartPage = (props) => {
 
     useEffect(() => {
         errorMessage.current.style.visibility = 'hidden';
-        props.id == 'login'
-            ? (privacyPolice.current.style.visibility = 'hidden')
-            : (privacyPolice.current.style.visibility = 'visible');
+        if (props.id == 'login') {  
+            myCheckBox.current.removeAttribute('required');
+            privacyPolice.current.style.visibility = 'hidden';
+            myCheckBox.current.style.visibility = 'hidden';
+        } else {
+            myCheckBox.current.style.visibility = 'visible';
+            myCheckBox.current.setAttribute('required', true)
+            privacyPolice.current.style.visibility = 'visible';
+        }
     }, [location]);
 
     const registrationGoogle = () => {
@@ -158,7 +172,21 @@ const StartPage = (props) => {
                                     />
                                 </div>
                                 <div className={style.field}>
-                                    <label>Password</label>
+                                    <div className={style.labelPassword}>
+                                        <label>Password</label>
+                                        <button
+                                            className={style.btnShowPass}
+                                            onClick={togglePasswordVisibility}
+                                        >
+                                            <div>
+                                                <img
+                                                    src={eye}
+                                                    alt="show_hidden_password"
+                                                />
+                                                <p>Hide</p>
+                                            </div>
+                                        </button>
+                                    </div>
                                     <input
                                         id="password"
                                         value={password}
@@ -166,7 +194,11 @@ const StartPage = (props) => {
                                             setPassword(e.target.value)
                                         }
                                         className={style.input}
-                                        type="password"
+                                        type={
+                                            passwordVisible
+                                                ? 'text'
+                                                : 'password'
+                                        }
                                         required
                                     />
                                 </div>
@@ -181,6 +213,7 @@ const StartPage = (props) => {
                                         className={style.checkbox}
                                         type="checkbox"
                                         required
+                                        ref={myCheckBox}
                                     />
                                     <label>
                                         Agree to our&nbsp;
@@ -195,7 +228,7 @@ const StartPage = (props) => {
                                 </div>
                                 <input
                                     type="submit"
-                                    name='privacy'
+                                    name="privacy"
                                     className={style.button}
                                     value={props.text_btn_submit}
                                 />

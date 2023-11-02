@@ -1,0 +1,25 @@
+.type {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #8A8989;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.type:hover {
+    cursor: pointer;
+    background-color: #c4c4c4;
+    color: white;
+    transform: scale(1.1);
+}
+
+.type:hover>div>img {
+    filter: brightness(10);
+}
+
+.type>p {
+    margin: 0;
+}

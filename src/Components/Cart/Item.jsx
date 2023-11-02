@@ -24,7 +24,7 @@ const Item = (props) => {
 
     return (
         <div className={style.block}>
-            <img className={style.image} src={props.image} alt="item_image" />
+            <img className={style.image} src={props.link_image} alt="item_image" />
             <div className={style.description}>
                 <h1 className={style.head}>{props.title}</h1>
                 <p className={style.text}>Color: {props.color}</p>

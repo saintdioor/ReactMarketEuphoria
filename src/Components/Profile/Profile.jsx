@@ -2,11 +2,11 @@ import style from './Profile.module.css';
 import Navigation from './Navigation';
 import Data from './Data';
 
-function Profile(props) {
+function Profile() {
     return (
         <div className={style.page}>
             <Navigation/>
-            <Data dataAddress={props.dataAddress} />
+            <Data/>
         </div>
     );
 }

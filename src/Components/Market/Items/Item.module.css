@@ -1,0 +1,89 @@
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.block {
+    position: relative;
+    width: 245px;
+    height: min-content;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    transition: transform 0.3s;
+    margin: 15px;
+}
+
+.block:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+}
+
+.button {
+    position: absolute;
+    top: 7%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    width: 33px;
+    height: 33px;
+    border: none;
+    border-radius: 50px;
+}
+
+.button:hover {
+    background-color: #8A33FD;
+}
+
+.button:hover>div>img {
+    filter: brightness(10);
+}
+
+.button>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 65%;
+    height: 41px;
+    font-size: 14px;
+}
+
+.description>p{
+    margin: 0;
+    padding: 0;
+}
+
+.price {
+    background-color: #F6F6F6;
+    width: 35%;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.brand {
+    color: #807D7E;
+    margin-top: 7px !important;
+}
+
+.title {
+    
+}

@@ -34,7 +34,7 @@ export default function Navigation() {
             </div>
             <div>
                 <Button
-                    link={'/account/my_orders'}
+                    link={'/orders'}
                     text={'My orders'}
                     img={orders}
                 />
@@ -42,7 +42,6 @@ export default function Navigation() {
                     link={'/account'}
                     text={'My info'}
                     img={account}
-                    active={active.current}
                 />
                 <Button
                     id={'sign-out'}

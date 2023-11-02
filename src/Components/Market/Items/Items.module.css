@@ -1,0 +1,32 @@
+.block {
+    width: 70%;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: max-content;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    color: #3F4646;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.left {
+
+}
+
+.right {
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    place-items: center;
+}
