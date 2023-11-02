@@ -24,15 +24,17 @@ export default function Data() {
         fetchData();
     }, []);
 
-    const addresses = user?.addresses?.map((address) => (
-        <Address
-            key={address.key}
-            name={address.name}
-            surname={address.surname}
-            number={address.phone}
-            address={address.address}
-        />
-    ));
+    const addresses = Array.isArray(user?.addresses)
+        ? user?.addresses?.map((address) => (
+              <Address
+                  key={address.key}
+                  name={address.name}
+                  surname={address.surname}
+                  number={address.phone}
+                  address={address.address}
+              />
+          ))
+        : '';
 
     return (
         <div>

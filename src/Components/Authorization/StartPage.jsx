@@ -15,10 +15,12 @@ import {
     signInWithPopup,
 } from 'firebase/auth';
 
+import { getDatabase, ref, set } from 'firebase/database';
+
 const StartPage = (props) => {
     const location = useLocation();
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const errorMessage = useRef();
@@ -28,7 +30,7 @@ const StartPage = (props) => {
         e.preventDefault();
         const auth = getAuth();
 
-        if (props.id == 'login') {
+        if (props.id === 'login') {
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     dispatch(
@@ -48,6 +50,16 @@ const StartPage = (props) => {
         if (props.id == 'signup') {
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
+                    const db = getDatabase();
+                    set(ref(db, 'users/' + userCredential.user.uid), {
+                        name: 'Test1',
+                        surname: 'Test2',
+                        email: userCredential.user.email,
+                        phone: 7_999_999_99_99,
+                        cart: '',
+                        addresses: ''
+                    });
+
                     dispatch(
                         setUser({
                             email: userCredential.user.email,
@@ -55,6 +67,7 @@ const StartPage = (props) => {
                             token: userCredential.user.accessToken,
                         })
                     );
+
                     navigate('/account');
                 })
                 .catch((error) => {
@@ -76,7 +89,8 @@ const StartPage = (props) => {
         signInWithPopup(auth, provider)
             .then((result) => {
                 // This gives you a Google Access Token. You can use it to access the Google API.
-                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const credential =
+                    GoogleAuthProvider.credentialFromResult(result);
                 const token = credential.accessToken;
                 // The signed-in user info.
                 const user = result.user;
@@ -93,7 +107,6 @@ const StartPage = (props) => {
             .catch((error) => {
                 errorMessage.current.style.visibility = 'visible';
             });
-            
     };
 
     const registrationTwitter = () => {
@@ -182,6 +195,7 @@ const StartPage = (props) => {
                                 </div>
                                 <input
                                     type="submit"
+                                    name='privacy'
                                     className={style.button}
                                     value={props.text_btn_submit}
                                 />
