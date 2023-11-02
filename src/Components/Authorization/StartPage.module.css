@@ -45,10 +45,17 @@
     background-color: #8A33FD;
     color: white;
     border-radius: 8px;
-    border: none;
+    border: 1px solid #8A33FD;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: #8A33FD;
+    transform: scale(1.01);
 }
 
 .field {
@@ -72,6 +79,12 @@
     font-size: 18px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.input:hover,
+.input:hover::placeholder {
+    border-color: #8A33FD;
+    color: #8A33FD;
 }
 
 .rules {

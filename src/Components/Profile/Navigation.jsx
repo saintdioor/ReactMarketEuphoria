@@ -2,7 +2,6 @@ import orders from './../../img/profile/orders.svg';
 import account from './../../img/profile/user.svg';
 import sign_out from './../../img/profile/sign_out.svg';
 import Button from './Button';
-import active from './Button.module.css';
 import style from './../Profile/Navigation.module.css';
 import { useState, useEffect } from 'react';
 

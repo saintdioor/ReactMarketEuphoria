@@ -25,11 +25,13 @@
     color: white;
     border-radius: 8px;
     border: solid 1px #8A33FD;
+    transition: transform 0.3s;
 }
 
 .active:hover {
     background-color: white;
     color: #8A33FD;
+    transform: scale(1.1);
 }
 
 .no_active {
@@ -37,9 +39,11 @@
     color: #8A33FD;
     border-radius: 8px;
     border: solid 1px #3C4242;
+    transition: transform 0.3s;
 }
 
 .no_active:hover {
     border: solid 1px #8A33FD;
     color: #8A33FD;
+    transform: scale(1.1);
 }
