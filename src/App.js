@@ -11,6 +11,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PrivateRoute from './utils/router/privateRoute';
 import OrdersPage from './Components/Orders/OrdersPage';
 import Market from './Components/Market/Market';
+import Item from './Components/Item/Item';
 
 function App(props) {
     return (
@@ -50,6 +51,15 @@ function App(props) {
                                 [
                                     <Header className='header' />,
                                     <Market/>
+                                ]
+                            }
+                        >
+                        </Route>
+                        <Route path='/item/*'
+                            element={
+                                [
+                                    <Header className='header' />,
+                                    <Item/>
                                 ]
                             }
                         >

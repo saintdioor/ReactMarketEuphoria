@@ -1,0 +1,10 @@
+.item {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #807D7E;
+}
+
+.image {
+    width: min-content;
+    height: min-content;
+}

@@ -1,0 +1,152 @@
+.block {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    width: 390px;
+    text-align: start;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.rating {
+    display: flex;
+    width: 190px;
+    justify-content: space-between;
+}
+
+.comments {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    color: #807D7E;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.ratingItem {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 30px;
+}
+
+.sizes>p {
+    padding: 0;
+    margin: 0;
+}
+
+.button_sizes {
+    display: flex;
+    width: 290px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btnSize {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid #807D7E;
+    border-color: #807D7E;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.btnSize:hover {
+    transform: scale(1.1);
+}
+
+.colors {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.color_items {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.color {
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+}
+
+.button {
+    width: 200px;
+    height: 46px;
+    border: none;
+    background-color: #8A33FD;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+.inside {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inside>p{
+    margin: 0;
+}
+
+.price {
+    width: 100px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #3C4242;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addToCart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 340px;
+}
+
+.price>p{
+    margin: 0;
+}
+
+.divider {
+    margin-top: 30px;
+    width: 534px;
+    height: 2px;
+    background-color: #BEBCBD;
+}
